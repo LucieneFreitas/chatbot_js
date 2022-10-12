@@ -10,12 +10,56 @@
     <link rel="Home" href="home.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
-    <p>terminar de assistir ao vídeo:
-      https://www.youtube.com/watch?v=He0xK1x-vnI
+    <!--bloco de bate-papo-->
+    <div class="chat-recolhivel">
+      <button id="chat-button" type="button" class="recolhivel">Converse conosco</button>
+      <i id="chat-icone" style="color: #fff" class="fa fa-fw fa-comments-o"></i>
+    </div>
+
+    <!--Conteudo-->
+    <div class="conteudo">
+      <div class="bloco-chat-completo">
+        
+        <!--Conteúdo da mensagem-->
+        <div class="container-externo">
+          <div class="chat-container">
+            <!--Mensagens-->
+            <div id="chatbox">
+              <h5 id="chat-carimboDataHora"></h5>
+              <p id="comecarMensagemBot" class="textoBot"><span>Carregando...</span></p>
+            </div>
+
+            <!--caixa de entrada do usuário -->
+            <div class=""bloco-entrada-chat>
+              <div id="entradaUsuario">
+                <input id="textoEntrada" class="entrada-caixa" type="text" name="msg" placeholder="Clique no 'Enter' para enviar uma mensagem">
+                <p></p>
+              </div>
+
+              <div class="chat-icons">
+                <i id="chat-icone" style="color: crimson" class="fa fa-fw fa-hearts" onclick="heartButton()"></i>
+                <i id="chat-icone" style="color: #333" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+              </div>
+            </div>
+
+            <!--parte da barra de bate-papo-->
+            <div id="chat-barra">
+              <p></p>
+            </div>
+          
+          
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p>
+      terminar de assistir ao vídeo: https://www.youtube.com/watch?v=He0xK1x-vnI
     </p>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
